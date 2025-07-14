@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 
+
 export default function Team() {
   const team = [
     {
@@ -7,49 +8,49 @@ export default function Team() {
       registerNo: "23091A3342",
       year: "III",
       branch: "CSE(AIML)",
-      imageURL: "http://10.50.30.4/RGMCET/images/photos/23091A3342.jpg"
+      imageURL: "/assets/23091A3342.jpg"
     },
     {
       name: "GADDAM SAI SWAROOPA REDDY",
       registerNo: "23091A3343",
       year: "III",
       branch: "CSE",
-      imageURL: "http://10.50.30.4/RGMCET/images/photos/23091A3343.jpg"
+      imageURL: "/assets/23091A3343.jpg"
     },
     {
       name: "GURU VISHNU",
       registerNo: "23091A3317",
       year: "III",
       branch: "CSE",
-      imageURL: "http://10.50.30.4/RGMCET/images/photos/23091A3317.jpg"
+      imageURL: "/assets/23091A3317.jpg"
     },
     {
       name: "ANDHE BHARGAV",
       registerNo: "23091A3305",
       year: "III",
       branch: "CSE",
-      imageURL: "http://10.50.30.4/RGMCET/images/photos/23091A3305.jpg"
+      imageURL: "/assets/23091A3305.jpg"
     },
     {
       name: "MUKKANDI SRIDHAR",
       registerNo: "23091A3349",
       year: "III",
       branch: "CSE",
-      imageURL: "http://10.50.30.4/RGMCET/images/photos/23091A3349.jpg"
+      imageURL: "/assets23091A3349.jpg"
     },
     {
       name: "GURUMADHU KAKARLA",
       registerNo: "23091A3322",
       year: "III",
       branch: "CSE",
-      imageURL: "http://10.50.30.4/RGMCET/images/photos/23091A3322.jpg"
+      imageURL: "/assets/23091A3322.jpg"
     },
     {
       name: "PATHAPADU SAIMANJUNATH",
       registerNo: "24095A3305",
       year: "III",
       branch: "CSE",
-      imageURL: "http://10.50.30.4/RGMCET/images/photos/24095A3305.jpg"
+      imageURL: "/assets/24095A3305.jpg"
     }
   ];
 
