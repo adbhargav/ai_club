@@ -57,27 +57,31 @@ print("Sentiment polarity:", blob.sentiment.polarity)`,
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        <h2 className="text-4xl font-bold mb-6 text-indigo-800">Club Projects</h2>
+    <div className="flex flex-col min-h-screen bg-gray-100">
+      {/* Main content */}
+      <main className="flex-grow">
+        <div className="max-w-5xl mx-auto px-6 py-12">
+          <h2 className="text-4xl font-bold mb-6 text-indigo-800">Club Projects</h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {dummyProjects.map((project) => (
-            <Link
-              key={project.id}
-              to={`/projects/${project.id}`}
-              state={{ project }}
-              className="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 block"
-            >
-              <h3 className="text-xl font-semibold text-blue-700">{project.title}</h3>
-              <p className="text-sm text-gray-600 mb-2">{project.contributors}</p>
-              <p className="text-gray-700">{project.summary}</p>
-            </Link>
-          ))}
+          <div className="grid md:grid-cols-2 gap-6">
+            {dummyProjects.map((project) => (
+              <Link
+                key={project.id}
+                to={`/projects/${project.id}`}
+                state={{ project }}
+                className="bg-white p-5 rounded-xl shadow hover:shadow-lg transition duration-300 block"
+              >
+                <h3 className="text-xl font-semibold text-blue-700">{project.title}</h3>
+                <p className="text-sm text-gray-600 mb-2">{project.contributors}</p>
+                <p className="text-gray-700">{project.summary}</p>
+              </Link>
+            ))}
+          </div>
         </div>
-     </div>
-           {/* Footer pushed to bottom */}
-           <Footer />
-         </div>
+      </main>
+
+      {/* Sticky footer */}
+      <Footer />
+    </div>
   );
 }
