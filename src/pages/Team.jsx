@@ -20,42 +20,42 @@ export default function Team() {
       name: "GADDAM SAI SWAROOPA REDDY",
       registerNo: "23091A3343",
       year: "III",
-      branch: "CSE",
+      branch: "CSE(AIML)",
       imageURL: img2
     },
     {
       name: "GURU VISHNU",
       registerNo: "23091A3317",
       year: "III",
-      branch: "CSE",
+      branch: "CSE(AIML)",
       imageURL: img3
     },
     {
       name: "ANDHE BHARGAV",
       registerNo: "23091A3305",
       year: "III",
-      branch: "CSE",
+      branch: "CSE(AIML)",
       imageURL: img4
     },
     {
       name: "MUKKANDI SRIDHAR",
-      registerNo: "23391A3305",
+      registerNo: "23091A3349",
       year: "III",
-      branch: "CSE",
+      branch: "CSE(AIML)",
       imageURL: img5
     },
     {
       name: "GURUMADHU KAKARLA",
       registerNo: "23091A3322",
       year: "III",
-      branch: "CSE",
+      branch: "CSE(AIML)",
       imageURL: img6
     },
     {
       name: "PATHAPADU SAIMANJUNATH",
       registerNo: "24095A3305",
       year: "III",
-      branch: "CSE",
+      branch: "CSE(AIML)",
       imageURL: img7
     }
   ];
