@@ -5,7 +5,7 @@ const practicePrompts = [
     title: "Futuristic City",
     description: "	Noir	&	Detective-Inspired	Portrait	Prompts.",
     defaultPrompt: "A futuristic city glowing with neon lights and flying cars",
-    mediaUrl: "/images/future-city.jpg",
+    mediaUrl: "p1.jpg",
     category: "Sci-Fi",
     difficulty: "Intermediate"
   },
