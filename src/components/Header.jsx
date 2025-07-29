@@ -14,6 +14,7 @@ export default function Header() {
     { label: "Home", to: "/" },
     { label: "About", to: "/about" },
     { label: "Events", to: "/events" },
+    { label: "Practice", to: "/practice" },
     { label: "Projects", to: "/projects" },
     { label: "Team", to: "/team" },
     { label: "Contact", to: "/contact" },
@@ -72,17 +73,9 @@ export default function Header() {
               </button>
             </>
           ) : (
-            <>
-              <Link to="/signin" className="text-blue-700 hover:underline text-sm sm:text-base">
-                Sign In
-              </Link>
-              <Link
-                to="/signup"
-                className="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800 text-sm sm:text-base"
-              >
-                Sign Up
-              </Link>
-            </>
+            <Link to="/signin" className="text-blue-700 hover:underline text-sm sm:text-base">
+              Sign In
+            </Link>
           )}
         </nav>
 
@@ -143,22 +136,13 @@ export default function Header() {
                 </button>
               </>
             ) : (
-              <>
-                <Link
-                  to="/signin"
-                  onClick={() => setMenuOpen(false)}
-                  className="text-blue-700"
-                >
-                  Sign In
-                </Link>
-                <Link
-                  to="/signup"
-                  onClick={() => setMenuOpen(false)}
-                  className="bg-blue-700 text-white py-2 text-center rounded"
-                >
-                  Sign Up
-                </Link>
-              </>
+              <Link
+                to="/signin"
+                onClick={() => setMenuOpen(false)}
+                className="text-blue-700 text-center"
+              >
+                Sign In
+              </Link>
             )}
           </div>
         </div>
