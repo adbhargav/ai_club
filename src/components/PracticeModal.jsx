@@ -53,51 +53,45 @@ const dummyPromptImages = [
   },
 ];
 
-const PracticeModal = ({
-  prompt,
-  onClose,
-  userPrompt,
-  setUserPrompt,
-  onSave,
-  onDone,
-}) => {
+const PracticeModal = ({ onClose }) => {
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-70 z-50 flex justify-center items-center px-4 py-10">
-      <div className="bg-[#e6f0ff] rounded-xl shadow-2xl p-6 max-w-6xl w-full max-h-[90vh] overflow-y-auto text-black">
-        {/* Header */}
-        <div className="flex justify-between items-center mb-6">
+    <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex justify-center items-center px-4 py-8">
+      <div className="bg-[#e6f0ff] rounded-2xl shadow-2xl p-6 w-full max-w-6xl max-h-[90vh] overflow-y-auto text-black">
+        {/* Modal Header */}
+        <div className="flex justify-between items-center mb-4">
           <h2 className="text-3xl font-bold text-blue-900">Prompt Viewer</h2>
-          <button onClick={onClose} className="text-xl text-blue-600 hover:text-blue-900">
+          <button
+            onClick={onClose}
+            className="text-3xl font-bold text-blue-600 hover:text-blue-900"
+          >
             &times;
           </button>
         </div>
 
-        {/* Title */}
-        <p className="mb-6 text-lg font-semibold text-center text-blue-800">
-          {prompt?.title || "Top 10 Prompts with Sample Images"}
+        {/* Subheading */}
+        <p className="text-lg font-semibold text-blue-800 text-center mb-6">
+          Top 10 Prompts with Sample Images
         </p>
 
-        {/* Prompt List */}
-        <div className="grid gap-6">
-          {dummyPromptImages.map((item, idx) => (
+        {/* Prompt Cards */}
+        <div className="space-y-6">
+          {dummyPromptImages.map((item, index) => (
             <div
-              key={idx}
-              className="flex flex-col md:flex-row items-center gap-4 bg-white border border-gray-300 p-4 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.01]"
+              key={index}
+              className="flex flex-col md:flex-row gap-4 bg-white border border-gray-200 rounded-xl p-4 shadow-md hover:shadow-lg transition-all"
             >
               <div className="flex-1">
-                <h4 className="font-semibold mb-1 text-blue-900">Prompt {idx + 1}</h4>
-                <p className="text-sm text-gray-700">{item.prompt}</p>
+                <h4 className="font-semibold text-blue-900 mb-1">Prompt {index + 1}</h4>
+                <p className="text-gray-700 text-sm">{item.prompt}</p>
               </div>
               <img
                 src={item.image}
-                alt={`Prompt ${idx + 1}`}
-                className="w-full md:w-1/3 rounded-lg object-cover max-h-60"
+                alt={`Prompt ${index + 1}`}
+                className="w-full md:w-[250px] h-[200px] object-cover rounded-lg"
               />
             </div>
           ))}
         </div>
-
-       
       </div>
     </div>
   );
